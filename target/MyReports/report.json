@@ -1,0 +1,119 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-27T06:24:19.413Z",
+        "before": [
+          {
+            "result": {
+              "duration": 27000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8693000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User registration with different data",
+        "description": "",
+        "id": "user-registration;user-registration-with-different-data",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 735000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "parallel.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on registraion page",
+            "match": {
+              "location": "parallel.DataTableListsteps.user_is_on_registraion_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters following user details",
+            "match": {
+              "location": "parallel.DataTableListsteps.user_enters_following_user_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "sonali",
+                  "sahani",
+                  "s.sahani@gmail.com",
+                  "8888",
+                  "Bangalore"
+                ]
+              },
+              {
+                "cells": [
+                  "sunil",
+                  "sahani",
+                  "su.sahani@gmail.com",
+                  "9999",
+                  "Odisha"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user registration should be successfull",
+            "match": {
+              "location": "parallel.DataTableListsteps.user_registration_should_be_successfull()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User Registration",
+    "description": "",
+    "id": "user-registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/parallel/DataTableASList.feature",
+    "tags": []
+  }
+]
